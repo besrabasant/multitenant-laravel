@@ -14,13 +14,13 @@
     components: {
       Link,
     },
-    
+
     props: ['href', 'active'],
 
     computed: {
       classes() {
         return this.active
-            ? 'nav-link active font-weight-bolder'
+            ? 'nav-link active fw-bolder'
             : 'nav-link'
       }
     }

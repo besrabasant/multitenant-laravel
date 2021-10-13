@@ -29,13 +29,13 @@
                 </div>
                 <div class="ps-3">
                   <div class="mb-2">
-                    <a href="https://laravel.com/docs" class="h5 font-weight-bolder text-decoration-none text-dark">Documentation</a>
+                    <a href="https://laravel.com/docs" class="h5 fw-bolder text-decoration-none text-dark">Documentation</a>
                   </div>
                   <p class="text-muted">
                     Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.
                   </p>
                   <a href="https://laravel.com/docs" class="text-decoration-none">
-                    <div class="mt-3 d-flex align-content-center font-weight-bold text-primary">
+                    <div class="mt-3 d-flex align-content-center fw-bold text-primary">
                       <div>Explore the documentation</div>
 
                       <div class="ms-1 text-primary">
@@ -56,13 +56,13 @@
                 </div>
                 <div class="ps-3">
                   <div class="mb-2">
-                    <a href="https://laracasts.com" class="h5 font-weight-bolder text-decoration-none text-dark">Laracasts</a>
+                    <a href="https://laracasts.com" class="h5 fw-bolder text-decoration-none text-dark">Laracasts</a>
                   </div>
                   <p class="text-muted">
                     Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
                   </p>
                   <a href="https://laravel.com/docs" class="text-decoration-none">
-                    <div class="mt-3 d-flex align-content-center font-weight-bold text-primary">
+                    <div class="mt-3 d-flex align-content-center fw-bold text-primary">
                       <div>Start watching Laracasts</div>
 
                       <div class="ms-1 text-primary">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="ps-3">
                   <div class="mb-2">
-                    <a href="https://getbootstrap.com/" class="h5 font-weight-bolder text-decoration-none text-dark">Bootstrap</a>
+                    <a href="https://getbootstrap.com/" class="h5 fw-bolder text-decoration-none text-dark">Bootstrap</a>
                   </div>
                   <p class="text-muted">
                     Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
@@ -101,7 +101,7 @@
                 </div>
                 <div class="ps-3">
                   <div class="mb-2">
-                    <span class="h5 font-weight-bolder text-decoration-none text-dark">Authentication</span>
+                    <span class="h5 fw-bolder text-decoration-none text-dark">Authentication</span>
                   </div>
                   <p class="text-muted">
                     Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.

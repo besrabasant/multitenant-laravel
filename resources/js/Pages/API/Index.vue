@@ -1,7 +1,7 @@
 <template>
   <app-layout title="API Tokens">
     <template #header>
-      <h2 class="h4 font-weight-bold">
+      <h2 class="h4 fw-bold">
         API Tokens
       </h2>
     </template>

@@ -37,10 +37,10 @@
             </div>
 
             <div>
-              <div class="small font-weight-lighter text-muted">
+              <div class="small fw-lighter text-muted">
                 {{ session.ip_address }},
 
-                <span class="text-success font-weight-bold" v-if="session.is_current_device">This device</span>
+                <span class="text-success fw-bold" v-if="session.is_current_device">This device</span>
                 <span v-else>Last active {{ session.last_active }}</span>
               </div>
             </div>

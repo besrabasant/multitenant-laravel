@@ -9,11 +9,11 @@
     </template>
 
     <template #content>
-      <h3 class="h5 font-weight-bold" v-if="twoFactorEnabled">
+      <h3 class="h5 fw-bold" v-if="twoFactorEnabled">
         You have enabled two factor authentication.
       </h3>
 
-      <h3 class="h5 font-weight-bold" v-else>
+      <h3 class="h5 fw-bold" v-else>
         You have not enabled two factor authentication.
       </h3>
 

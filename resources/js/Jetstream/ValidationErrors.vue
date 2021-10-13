@@ -1,6 +1,6 @@
 <template>
     <div class="alert alert-danger text-sm p-2" role="alert" v-if="hasErrors">
-        <div class="font-weight-bold">Whoops! Something went wrong.</div>
+        <div class="fw-bold">Whoops! Something went wrong.</div>
 
         <ul>
             <li v-for="(error, key) in errors" :key="key">{{ error }}</li>
@@ -10,7 +10,7 @@
 
 <script>
   import { defineComponent } from 'vue'
-	
+
 	export default defineComponent({
 		computed: {
 			errors() {

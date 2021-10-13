@@ -1,7 +1,7 @@
 <template>
   <app-layout title="Profile">
     <template #header>
-      <h2 class="h4 font-weight-bold">
+      <h2 class="h4 fw-bold">
         Profile
       </h2>
     </template>

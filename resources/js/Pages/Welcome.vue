@@ -43,7 +43,7 @@
                     </div>
                     <div class="ps-3">
                       <div class="mb-2">
-                        <a href="https://laravel.com/docs" class="h5 font-weight-bolder text-dark">Documentation</a>
+                        <a href="https://laravel.com/docs" class="h5 fw-bolder text-dark">Documentation</a>
                       </div>
                       <p class="text-muted small">
                         Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
@@ -60,7 +60,7 @@
                     </div>
                     <div class="ps-3">
                       <div class="mb-2">
-                        <a href="https://laracasts.com" class="h5 font-weight-bolder text-dark">Laracasts</a>
+                        <a href="https://laracasts.com" class="h5 fw-bolder text-dark">Laracasts</a>
                       </div>
                       <p class="text-muted small">
                         Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
@@ -77,7 +77,7 @@
                     </div>
                     <div class="ps-3 text-sm">
                       <div class="mb-2">
-                        <a href="https://laravel-news.com/" class="h5 font-weight-bolder text-dark">Laravel News</a>
+                        <a href="https://laravel-news.com/" class="h5 fw-bolder text-dark">Laravel News</a>
                       </div>
                       <p class="text-muted small">
                         Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
@@ -94,7 +94,7 @@
                     </div>
                     <div class="ps-3">
                       <div class="mb-2">
-                        <span class="h5 font-weight-bolder text-dark">Vibrant Ecosystem</span>
+                        <span class="h5 fw-bolder text-dark">Vibrant Ecosystem</span>
                       </div>
                       <p class="text-muted small">
                         Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="text-muted">Forge</a>, <a href="https://vapor.laravel.com" class="text-muted">Vapor</a>, <a href="https://nova.laravel.com" class="text-muted">Nova</a>, and <a href="https://envoyer.io" class="text-muted">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="text-muted">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="text-muted">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="text-muted">Echo</a>, <a href="https://laravel.com/docs/horizon" class="text-muted">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="text-muted">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="text-muted">Telescope</a>, and more.

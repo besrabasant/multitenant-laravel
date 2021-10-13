@@ -11,7 +11,7 @@
             </div>
           </div>
           <div>
-            <h5 class="font-weight-bold">
+            <h5 class="fw-bold">
               <slot name="title">
               </slot>
             </h5>
