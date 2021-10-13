@@ -2,23 +2,10 @@
 
 declare(strict_types=1);
 
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
-use Laravel\Jetstream\Http\Controllers\Inertia\UserProfileController;
-use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
-use Laravel\Jetstream\Http\Controllers\Inertia\ApiTokenController;
-use Laravel\Jetstream\Http\Controllers\Inertia\CurrentUserController;
-use Laravel\Jetstream\Http\Controllers\Inertia\OtherBrowserSessionsController;
-use Laravel\Jetstream\Http\Controllers\Inertia\PrivacyPolicyController;
-use Laravel\Jetstream\Http\Controllers\Inertia\ProfilePhotoController;
-use Laravel\Jetstream\Http\Controllers\Inertia\TeamController;
-use Laravel\Jetstream\Http\Controllers\Inertia\TeamMemberController;
-use Laravel\Jetstream\Http\Controllers\Inertia\TermsOfServiceController;
-use Laravel\Jetstream\Http\Controllers\TeamInvitationController;
-use Laravel\Jetstream\Jetstream;
 
 
 /*
@@ -38,14 +25,8 @@ Route::middleware([
     InitializeTenancyByDomain::class,
     PreventAccessFromCentralDomains::class,
 ])->group(function () {
-    Route::get('/', function () {
-        return Inertia::render('Welcome', [
-            'canLogin' => Route::has('login'),
-            'canRegister' => Route::has('register'),
-            'laravelVersion' => Application::VERSION,
-            'phpVersion' => PHP_VERSION,
-        ]);
-    });
+
+    \Modules\Frontend\Frontend::routes();
 
     Route::group(['auth:sanctum', 'verified'], function () {
 
