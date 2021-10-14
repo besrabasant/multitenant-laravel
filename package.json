@@ -10,6 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@hotwired/turbo": "^7.0.1",
         "@inertiajs/inertia": "^0.10.0",
         "@inertiajs/inertia-vue3": "^0.5.1",
         "@inertiajs/progress": "^0.2.6",
@@ -20,15 +21,22 @@
         "alpinejs": "^3.2.6",
         "axios": "^0.21",
         "bootstrap": "^5.1.0",
+        "laravel-echo": "^1.11.2",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "postcss-import": "^12.0.1",
+        "pusher-js": "^7.0.3",
         "resolve-url-loader": "^4.0.0",
         "sass": "^1.42.1",
         "sass-loader": "^12.2.0",
         "tailwindcss": "^2.0.1",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.4.4",
         "vue": "^3.0.5",
         "vue-loader": "^16.1.2"
+    },
+    "dependencies": {
+        "@types/lodash": "^4.14.175"
     }
 }
