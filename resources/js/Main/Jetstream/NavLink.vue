@@ -21,7 +21,7 @@
       classes() {
         return this.active
             ? 'nav-link active fw-bolder'
-            : 'nav-link'
+            : 'nav-link text-white'
       }
     }
   })
