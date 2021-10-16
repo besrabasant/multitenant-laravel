@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
 
+        Modules\Frontend\Providers\FrontendServiceProvider::class,
+        Modules\Tenancy\Providers\TenancyServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -177,7 +179,6 @@ return [
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
         App\Providers\TenancyServiceProvider::class,
-
     ],
 
     /*
