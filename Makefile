@@ -1,5 +1,7 @@
-docker-dev-build::
+docker-build::
 	vendor/bin/sail build --no-cache
+
+docker-restart:: docker-stop docker-dev
 
 docker-dev::
 	vendor/bin/sail up -d --build --force-recreate
