@@ -126,7 +126,7 @@
     </nav>
 </template>
 
-<script>
+<script lang="ts">
 import {defineComponent} from "vue";
 import {Link} from "@inertiajs/inertia-vue3";
 import JetApplicationLogo from "@/Main/Jetstream/ApplicationLogo";

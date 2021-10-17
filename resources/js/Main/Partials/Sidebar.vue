@@ -51,9 +51,10 @@
     </div>
 </template>
 
-<script>
-import {defineComponent} from "vue";
-import {Link} from '@inertiajs/inertia-vue3'
+<script lang="ts">
+import {computed, defineComponent} from "vue";
+import {Link} from '@inertiajs/inertia-vue3';
+import {Inertia} from '@inertiajs/inertia';
 import JetApplicationMark from "@/Main/Jetstream/ApplicationMark";
 import JetDropdownLink from "@/Main/Jetstream/DropdownLink";
 import JetNavLink from "@/Main/Jetstream/NavLink";
@@ -67,23 +68,25 @@ export default defineComponent({
         JetNavLink
     },
 
-    methods: {
-        switchToTeam(team) {
-            this.$inertia.put(route('current-team.update'), {
+    setup() {
+
+        var path = computed(() => window.location.pathname)
+
+        const switchToTeam = (team) => {
+            Inertia.put(route('current-team.update'), {
                 'team_id': team.id
             }, {
                 preserveState: false
-            })
-        },
+            });
+        }
 
-        logout() {
-            this.$inertia.post(route('logout'));
-        },
-    },
+        const logout = () => {
+            Inertia.post(route('logout'));
+        }
 
-    computed: {
-        path() {
-            return window.location.pathname
+
+        return {
+            switchToTeam, logout, path
         }
     }
 })
