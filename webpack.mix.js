@@ -11,11 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.webpackConfig(require('./webpack.config'));
 
-mix.ts('resources/js/App/app.ts', 'public/js/app.js');
+mix.ts('resources/js/App/app.ts', 'public/js/app.js', {
+    transpileOnly: true
+});
 
-mix.ts('resources/js/Main/app.ts', 'public/js/main.js').vue();
+mix.ts('resources/js/Main/app.ts', 'public/js/main.js', {
+    transpileOnly: true
+}).vue({version: 3});
 
 mix.sass('resources/sass/app.scss', 'public/css/app.css')
     .sass('resources/sass/main.scss', 'public/css/main.css')
@@ -24,6 +27,8 @@ mix.sass('resources/sass/app.scss', 'public/css/app.css')
     });
 
 mix.sourceMaps(false, 'source-map');
+
+mix.webpackConfig(require('./webpack.config'));
 
 if (mix.inProduction()) {
     mix.version();

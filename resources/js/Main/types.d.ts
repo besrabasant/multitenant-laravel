@@ -1,13 +1,15 @@
-import {Plugin} from "vue";
-import {InertiaApp, InertiaAppProps} from "@inertiajs/inertia-vue3";
+import type {Plugin} from "vue";
+import type {InertiaApp, InertiaAppProps} from "@inertiajs/inertia-vue3";
 
-declare module '*.vue' {
-    import Vue from 'vue'
-    export default Vue
+declare module "*.vue" {
+    import { defineComponent } from 'vue';
+    const component: ReturnType<typeof defineComponent>;
+    export default component;
 }
 
+
 declare global {
-    var route: any;
+    let route: any;
 
     interface Window {
         route: any

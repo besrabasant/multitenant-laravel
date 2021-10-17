@@ -52,12 +52,13 @@
 </template>
 
 <script>
+import {defineComponent} from "vue";
 import {Link} from '@inertiajs/inertia-vue3'
 import JetApplicationMark from "@/Main/Jetstream/ApplicationMark";
 import JetDropdownLink from "@/Main/Jetstream/DropdownLink";
 import JetNavLink from "@/Main/Jetstream/NavLink";
 
-export default {
+export default defineComponent({
     name: "Sidebar",
     components: {
         Link,
@@ -85,7 +86,7 @@ export default {
             return window.location.pathname
         }
     }
-}
+})
 </script>
 
 <style scoped>

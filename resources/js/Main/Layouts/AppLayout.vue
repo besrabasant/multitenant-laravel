@@ -24,15 +24,14 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import {defineComponent} from "vue";
 import {Head, Link} from '@inertiajs/inertia-vue3'
 import JetBanner from '@/Main/Jetstream/Banner.vue'
-import Navbar from "@/Main/Partials/Navbar";
-import Sidebar from "@/Main/Partials/Sidebar";
+import Navbar from "@/Main/Partials/Navbar.vue";
+import Sidebar from "@/Main/Partials/Sidebar.vue";
 
-// TODO: Add Sidebar layout
-
-export default {
+export default defineComponent({
     props: {
         title: String,
     },
@@ -44,25 +43,5 @@ export default {
         Navbar,
         Sidebar,
     },
-
-    methods: {
-        switchToTeam(team) {
-            this.$inertia.put(route('current-team.update'), {
-                'team_id': team.id
-            }, {
-                preserveState: false
-            })
-        },
-
-        logout() {
-            this.$inertia.post(route('logout'));
-        },
-    },
-
-    computed: {
-        path() {
-            return window.location.pathname
-        }
-    }
-}
+})
 </script>

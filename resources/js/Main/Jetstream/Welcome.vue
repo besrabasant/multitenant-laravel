@@ -5,8 +5,12 @@
                 <div class="card-body bg-white px-5 py-3 border-bottom rounded-top">
                     <div class="mx-3 my-3">
                         <h3 class="h3 my-4 fw-bold">
-                            Welcome to the Dashboard
+                            Create your application
                         </h3>
+
+                        <Link :href="route('application.create')" class="btn btn-lg btn-primary text-white">
+                            Create
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -16,11 +20,11 @@
 
 <script>
 import {defineComponent} from 'vue'
-import JetApplicationLogo from '@/Main/Jetstream/ApplicationLogo.vue'
+import {Link} from "@inertiajs/inertia-vue3";
 
 export default defineComponent({
     components: {
-        JetApplicationLogo,
+        Link
     },
 })
 </script>

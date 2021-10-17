@@ -1,15 +1,20 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "es2020",
+        "target": "esnext",
+        "module": "esnext",
         "moduleResolution": "node",
-        "baseUrl": "./",
+        "jsx": "preserve",
+        "baseUrl": ".",
         "strict": true,
+        "esModuleInterop": true,
+        "allowJs": true,
         // Enable strict type-checking options
         "skipLibCheck": true,
         // Skip type checking of declaration files
         "noImplicitAny": false,
         // Bypass raising errors on `any` type,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
         "paths": {
             "@/*": [
                 "./resources/js/*"
@@ -17,7 +22,14 @@
         }
     },
     "include": [
-        "resources/js/**/*"
+        "./resources/js/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "./resources/js/App/types.d.ts",
+        "./resources/js/Main/types.d.ts",
     ]
     // Frontend paths pattern
 }
