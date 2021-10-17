@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Modules\Tenancy\Tenancy;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -37,5 +38,7 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+
+        Tenancy::registerExceptionHandlers($this);
     }
 }
