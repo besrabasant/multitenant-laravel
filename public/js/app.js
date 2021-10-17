@@ -3190,7 +3190,7 @@ start();
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_turbo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/turbo */ "./resources/js/App/libs/turbo.ts");
-__webpack_require__.e(/*! import() */ "resources_js_Shared_bootstrap_ts-_ecc60").then(__webpack_require__.bind(__webpack_require__, /*! @/Shared/bootstrap */ "./resources/js/Shared/bootstrap.ts"));
+__webpack_require__.e(/*! import() */ "resources_js_Shared_bootstrap_ts").then(__webpack_require__.bind(__webpack_require__, /*! @/Shared/bootstrap */ "./resources/js/Shared/bootstrap.ts"));
 __webpack_require__.e(/*! import() */ "resources_js_App_bootstrap_ts").then(__webpack_require__.bind(__webpack_require__, /*! @/App/bootstrap */ "./resources/js/App/bootstrap.ts")); // import './elements/turbo-echo-stream-tag';
 
 
@@ -3346,7 +3346,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Shared_bootstrap_ts-_ecc60":1,"resources_js_App_bootstrap_ts":1}[chunkId]) return "js/app/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Shared_bootstrap_ts":1,"resources_js_App_bootstrap_ts":1}[chunkId]) return "js/app/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

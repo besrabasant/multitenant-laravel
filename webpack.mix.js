@@ -18,7 +18,7 @@ mix.ts('resources/js/App/app.ts', 'public/js/app.js', {
 
 mix.ts('resources/js/Main/app.ts', 'public/js/main.js', {
     transpileOnly: true
-}).vue({version: 3});
+});
 
 mix.sass('resources/sass/app.scss', 'public/css/app.css')
     .sass('resources/sass/main.scss', 'public/css/main.css')
@@ -33,4 +33,3 @@ mix.webpackConfig(require('./webpack.config'));
 if (mix.inProduction()) {
     mix.version();
 }
-

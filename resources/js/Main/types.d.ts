@@ -9,16 +9,7 @@ declare module "*.vue" {
 
 
 declare global {
-    let route: any;
-
     interface Window {
-        route: any
+        Alpine: any
     }
-}
-
-interface InertiaSetupProps {
-    el: Element
-    app: InertiaApp
-    props: InertiaAppProps
-    plugin: Plugin
 }

@@ -54,6 +54,7 @@ class Tenancy
         Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
             Route::get('/application/create', [TenantController::class, 'create'])->name('application.create');
+            Route::post('/application', [TenantController::class, 'store'])->name('application.store');
 
         });
     }
