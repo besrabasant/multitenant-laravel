@@ -3,6 +3,9 @@ docker-build::
 
 docker-restart:: docker-stop docker-dev
 
+docker-watch::
+	vendor/bin/sail up --build --force-recreate
+
 docker-dev::
 	vendor/bin/sail up -d --build --force-recreate
 
