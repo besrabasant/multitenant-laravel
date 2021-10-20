@@ -167,6 +167,7 @@ return [
          */
 
         Modules\Frontend\Providers\FrontendServiceProvider::class,
+        Modules\AdminUI\Providers\AdminUIServiceProvider::class,
         Modules\Tenancy\Providers\TenancyServiceProvider::class,
         /*
          * Application Service Providers...

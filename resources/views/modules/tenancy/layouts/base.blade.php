@@ -1,6 +1,6 @@
 <?php
 ?>
-@extends('layouts.base')
+@extends('layouts.app')
 
 @push('fonts')
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">

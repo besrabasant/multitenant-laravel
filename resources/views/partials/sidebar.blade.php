@@ -10,6 +10,9 @@
         <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
             {{ __('Dashboard') }}
         </x-jet-nav-link>
+        <x-jet-nav-link href="{{ route('application.create') }}" :active="request()->routeIs('application.create')">
+            {{ __('Application') }}
+        </x-jet-nav-link>
     </ul>
     <hr>
     @auth
