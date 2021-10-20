@@ -8,23 +8,24 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    @stack('fonts')
+@stack('fonts')
 
-    <!-- Styles -->
-    @stack('styles')
+<!-- Styles -->
+@stack('styles')
 
-    <!-- Scripts -->
+<!-- Scripts -->
     @stack('scripts')
 </head>
 <body class="font-sans antialiased bg-light">
 <div>
-
-@yield('content')
-
+    @yield('content')
 </div>
 
 @stack('footer_contents')
 
 @stack('footer_scripts')
+@env('local')
+    <script src="http://localhost:35729/livereload.js"></script>
+@endenv
 </body>
 </html>

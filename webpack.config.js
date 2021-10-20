@@ -1,7 +1,7 @@
 const path = require('path');
 const ResolveTypeScriptPlugin = require("resolve-typescript-plugin").default;
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
     resolve: {
@@ -11,5 +11,8 @@ module.exports = {
         fullySpecified: false,
         plugins: [new ResolveTypeScriptPlugin()]
     },
-    plugins: [new ForkTsCheckerWebpackPlugin()],
+    plugins: [
+        new ForkTsCheckerWebpackPlugin(),
+        new LiveReloadPlugin()
+    ],
 };
